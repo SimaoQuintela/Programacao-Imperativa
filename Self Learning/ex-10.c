@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+    // verificar se um número é triangular, exemplo: 120 é triangular porque 4 x 5 x 6 = 120
+
 void main() {
 
     // declarando variáveis
