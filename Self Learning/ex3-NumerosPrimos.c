@@ -20,7 +20,7 @@ void main() {
         }
     }
     /* se o acumulador ( número de divisores ) for igual a 2 o número é primo , se o resto da divisao do numero por 2 der 0 o numero e par,
-     se o resto do numero por 2 der diferente de 2 o numero e impar */
+     se o resto do numero por 2 der diferente de 0 o numero e impar */
     if (acumulador == 2) {
         printf("O numero %d e primo\n", numero);
     } else {
