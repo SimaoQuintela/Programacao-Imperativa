@@ -18,5 +18,4 @@ void horizontal(int n){
             printf("\n");
             square = square +2;
     }
-    system("pause");
 }
