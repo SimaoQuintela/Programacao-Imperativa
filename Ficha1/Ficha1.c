@@ -182,9 +182,9 @@ int main(){
 void quadrado(int n){
     // declarando variáveis
     int i, j;
-     podemos considerar o quadrado como uma matriz n x n
-    ou seja usamos 1 for para as linhas e outro for para as
-    colunas 
+    // podemos considerar o quadrado como uma matriz n x n
+    // ou seja usamos 1 for para as linhas e outro for para as
+    // colunas 
     for(i=0; i < n; i++){
         for(j=0; j < n; j++) {
             putchar('#');
