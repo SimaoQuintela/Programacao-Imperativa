@@ -11,7 +11,7 @@ void main(){
     linhas = n;
 
     for(i=1; i<= n; i++){               // i tem o papel de linha e j o papel de coluna
-        for(j=1; j<linhas; j++) {       // este for destina-se a colocar no programa os espaços vazios, para isso criei a variável linhas que faz o mesmo papel de n
+        for(j=1; j<linhas; j++) {       // este for destina-se a colocar no triangulo os espaços vazios, para isso criei a variável linhas que faz o mesmo papel de n
             putchar(' ');               // no entanto queria altera-la sem alterar o valor de n que está a ser usado na linha anterior, daí ter criado uma nova variável
         }
         linhas--;
