@@ -178,7 +178,7 @@ int main(){
 */
 
     // 2.
-/*
+
 void main(){
     // declarando variáveis
     int i, j, n;
@@ -186,11 +186,11 @@ void main(){
     // pedindo a dimensão do quadrado ao utilizador
     printf("Insira a dimensao do seu quadrado: ");
     scanf("%d", &n); 
-
+/*
     podemos considerar o quadrado como uma matriz n x n
     ou seja usamos 1 for para as linhas e outro for para as
     colunas 
-
+*/
     for(i=0; i < n; i++){
         for(j=0; j < n; j++) {
             putchar('#');
@@ -199,7 +199,7 @@ void main(){
     }
     system("pause");
 }
-*/
+
     //3
 
 void main(){
