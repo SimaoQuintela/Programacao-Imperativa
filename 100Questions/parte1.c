@@ -172,15 +172,11 @@ char* mystrstr(char s1[], char s2[]){
 
     char newresult = *(char *)&position;
     if(i==strlen(s2) && j== strlen(s1)){
-        printf("%p\n",newresult);
         return NULL;
     }
     else 
-        printf("%p\n",newresult);
-        return NULL;
+        return newresult;
 }
-
-
 
 //11 reverse a string
 
