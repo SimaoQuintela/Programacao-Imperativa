@@ -101,7 +101,7 @@ int qDig(unsigned int n){
 }
 
 //7 concatenate 2 strings 
-
+// need to fix this one
 char *mystrcat(char s1[], char s2[]){
     int i, j;
 
