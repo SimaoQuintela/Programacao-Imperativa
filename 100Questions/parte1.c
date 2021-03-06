@@ -178,40 +178,6 @@ char *mystrstr(char s1[], char s2[]){
         return *result;
 }
 
-/// Ajuda do Nelson, ver isto depois 
-/*
-char *sprstr(char s1[], char s2[]){
-    int i = 0, j = 0;
-    int position;
-    int position2;
-
-    while(i<strlen(s2)){
-        while(j<strlen(s1)){
-            if(s1[j] != s2[i]){
-                i=0;
-                j++;
-            } else {
-                if(s2[strlen(s2)-1] == s1[j]){
-                    position = j - strlen(s2) + 1;
-                    i++;
-                    j++;
-                } else {
-                    i++;
-                    j++;
-                }
-            }
-        }
-        i+=1;
-    }
-
-    if(i==0 && j== strlen(s1))
-        position = 0;
-
-    printf("%d\n",position2);
-    return 0;
-}
-*/
-
 //11 reverse a string
 
 
