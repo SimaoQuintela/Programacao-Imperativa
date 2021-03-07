@@ -101,17 +101,24 @@ int qDig(unsigned int n){
 }
 
 //7 concatenate 2 strings 
-// need to fix this one
 
 char *mystrcat(char s1[], char s2[]){
-    int i, j;
+    char newstr[strlen(s1) + strlen(s2)];
+    int i = 0, j = 0;
 
-    for(i = strlen(s1); s1[i]; i++)
-        for(j=0; s2[j]; j++){
-            s1[i]=s2[j];
-            i++;
-        }
-    s1[i]='\0';
+    while (i < strlen(s1)){
+        newstr[i] = s1[i];
+        i++;
+    }
+
+    while (j < strlen(s2)){
+        newstr[i + j] = s2[j];
+        j++;
+    }
+
+    newstr[strlen(s1) + strlen(s2)] = '\0';
+
+    printf("%s\n", newstr);
 
     return s1;
 }
@@ -181,11 +188,50 @@ char* mystrstr(char s1[], char s2[]){
 
 //11 reverse a string
 
+void mystrrev(char s[]){
+    int i = strlen(s) - 1, j;
+    char s2[strlen(s)];
 
+    for(j=0; j<strlen(s); j++){
+        s2[j] = s[i];
+        i--;
+    }
+    s2[j] = '\0';
+    printf("%s\n", s2);
+}
 
+//12   delete all of the vogals of a string
 
+int contaVogais(char s[]){
+    int vogais = 0, i = 0;
+    while(s[i]){
+        if(s[i]=='a' || s[i]=='A' || s[i]=='e' || s[i]=='E' || s[i]=='i' || s[i]=='I' || s[i]=='o' || s[i]=='O' || s[i]=='u' || s[i]=='U'){
+            vogais++;
+            i++;
+        } else {
+            i++;
+        }
+    }
+    return vogais;
+}
 
+void strnoV(char s[]){
+    int i = 0, j = 0;
+    char s2[strlen(s) - contaVogais(s)];
 
+    while(s[i]){
+        if(s[i]=='a' || s[i]=='A' || s[i]=='e' || s[i]=='E' || s[i]=='i' || s[i]=='I' || s[i]=='o' || s[i]=='O' || s[i]=='u' || s[i]=='U'){
+            i++;
+        } else {
+            s2[j] = s[i];
+            j++;
+            i++;
+        }
+    }
+    s2[j] = '\0';
+
+}
+// 13
 
 
 
@@ -208,11 +254,15 @@ int main(){
             break;
         case 6 : printf("Digitos: %d",qDig(456));
             break;
-        case 7 : printf("%s", mystrcat("Hello", "World"));
+        case 7 : mystrcat("Hello", "World");
             break;
         case 9 : printf("Resultado: %d", strcmp("Hello", "Helloo"));
             break;
         case 10 : mystrstr("anagrama","ama");
+            break;
+        case 11 : mystrrev("ana");  // badum ts
+            break;
+        case 12 : strnoV("jota be be");
             break;
     }   
 
