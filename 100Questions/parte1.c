@@ -147,8 +147,8 @@ int mystrcmp(char s1[], char s2[]) {
 //10 a function that returns the position where a string occures in other string 
 
 char* mystrstr(char s1[], char s2[]){
-    size_t i = 0, j = 0;
-    int position;
+    size_t i = 0, j = 0;    // I used this type because I need to compare i and j with a strlen function which type is size_t, so I used it on i and j to match the types. In this case
+    int position;           // there is no problem to use it because i and j are always >= 0 
 
 
     while(i<strlen(s2)){
@@ -170,7 +170,7 @@ char* mystrstr(char s1[], char s2[]){
         i++;
     }
 
-    char newresult = *(char *)&position;
+    char newresult = *(char *)&position;        
     if(i==strlen(s2) && j== strlen(s1)){
         return NULL;
     }
