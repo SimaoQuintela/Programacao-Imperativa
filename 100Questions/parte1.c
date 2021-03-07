@@ -102,25 +102,23 @@ int qDig(unsigned int n){
 
 //7 concatenate 2 strings 
 
-char *mystrcat(char s1[], char s2[]){
+char *mystrcat (char s1[], char s2[]){
     char newstr[strlen(s1) + strlen(s2)];
-    int i = 0, j = 0;
+    int i, j;
 
-    while (i < strlen(s1)){
+    for (i = 0; i < strlen(s1); i++){
         newstr[i] = s1[i];
-        i++;
     }
 
-    while (j < strlen(s2)){
+    for (j = 0; j < strlen(s2); j++){
         newstr[i + j] = s2[j];
-        j++;
     }
 
     newstr[strlen(s1) + strlen(s2)] = '\0';
 
     printf("%s\n", newstr);
 
-    return s1;
+    return newstr;
 }
 
 //8 
