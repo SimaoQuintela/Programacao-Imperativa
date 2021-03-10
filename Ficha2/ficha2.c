@@ -40,8 +40,7 @@ float main(){
 */
 
 //3
-// esta definição está super longa porém faz menos passagens pela função do que a definição alternativa abaixo
-
+// Need to fix this one
 int mdc (int a, int b){
     // declarando variáveis
     int i = 2;
